@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('migrate:refresh --force')
+        $schedule->command('migrate:refresh --force --seed')
                  ->hourly();
     }
 
